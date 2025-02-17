@@ -1,4 +1,7 @@
 package Cards;
+import main.java.Cards.CardHand;
+import main.java.Cards.Card;
+
 
 public class PlayerCardHand extends CardHand {
 	public PlayerCardHand() {

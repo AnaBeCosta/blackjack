@@ -1,5 +1,8 @@
+package main.java;
+
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
-import javax.swing.WindowConstants;
 
 
 public class HistoryFrame extends JFrame {

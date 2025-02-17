@@ -1,14 +1,19 @@
-package Players;
+package main.java.Players;
+
+import main.java.Cards.Card;
+import main.java.Cards.DealerCardHand;
+import main.java.Cards.Deck;
+import main.java.Cards.PlayerCardHand;
 
 import java.util.ArrayList;
 
 /**
- * Class representing the Dealer of a Blackjack game. Dealer must stand on 17 or
+ * Class representing the Dealer of a main.java.main.java.balckjack.Blackjack game. Dealer must stand on 17 or
  * over and can only accept an Ace as 11.
  *
  * @author David Winter
  */
-public class Dealer extends BlackjackPlayer {
+public class Dealer extends main.java.Players.BlackjackPlayer {
 	/**
 	 * The Deck of cards used for the game. The Dealer is in complete control of the
 	 * Deck.
@@ -120,7 +125,7 @@ public class Dealer extends BlackjackPlayer {
 	 *
 	 * @return True if cards were dealt, otherwise false.
 	 */
-	public void deal(ArrayList<Player> players) {
+	public void deal(ArrayList<main.java.Players.Player> players) {
 		gameOver = false;
 		cardsFaceUp = false;
 
@@ -143,7 +148,7 @@ public class Dealer extends BlackjackPlayer {
 
 		for (Player player : players) {
 			if (player.hand.hasBlackjack()) {
-				say(player.getName() + " has Blackjack!");
+				say(player.getName() + " has main.java.main.java.balckjack.Blackjack!");
 				go(players);
 				break;
 			}
@@ -233,12 +238,12 @@ public class Dealer extends BlackjackPlayer {
 
 	private void handlePlayerBlackjack(Player player) {
 		double winnings = (player.getBet() * 3) / 2;
-		say(player.getName() + " wins with Blackjack $" + winnings);
+		say(player.getName() + " wins with main.java.main.java.balckjack.Blackjack $" + winnings);
 		player.wins(player.getBet() + winnings);
 	}
 
 	private void handleDealerBlackjack(Player player) {
-		say("Dealer has Blackjack. " + player.getName() + " loses $" + player.getBet());
+		say("Dealer has main.java.main.java.balckjack.Blackjack. " + player.getName() + " loses $" + player.getBet());
 		player.loses();
 	}
 

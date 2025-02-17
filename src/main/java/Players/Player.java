@@ -1,7 +1,11 @@
-package Players;
+package main.java.Players;
+
+import Cards.PlayerCardHand;
+
+import java.io.Serializable;
 
 /**
- * Class that represents a normal Blackjack player.
+ * Class that represents a normal main.java.main.java.balckjack.Blackjack player.
  *
  * @author David Winter
  */

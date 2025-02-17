@@ -1,8 +1,10 @@
-package Cards;
+package main.java.Cards;
 
+
+import java.util.Stack;
 
 /**
- * Represents a pack of 52 playing Cards. Hearts, Diamonds, Clubs and Spades;
+ * Represents a pack of 52 playing main.java.Cards. Hearts, Diamonds, Clubs and Spades;
  * Ace, 2 - 10, Jack, Queen and King.
  *
  * @author David Winter

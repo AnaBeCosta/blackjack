@@ -1,8 +1,11 @@
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.SwingConstants;
+package main.java;
 
-import Players.Player;
+import main.java.Players.Player;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class PlayerDialog extends JDialog implements ActionListener {
 	String name;
@@ -114,7 +117,7 @@ public class PlayerDialog extends JDialog implements ActionListener {
 	}
 
 	private void inicializarComponentes() {
-		playerDetailsPanel = new JPanel();
+		JPanel playerDetailsPanel = new JPanel();
 		this.add(playerDetailsPanel, BorderLayout.NORTH);
 	}
 }

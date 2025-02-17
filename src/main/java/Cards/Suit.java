@@ -3,7 +3,7 @@
  * Licensed under the XYZ License. See LICENSE file for details.
  */
 
-package Cards;
+package main.java.Cards;
 
 /**
  * Class to represent a card Suit.

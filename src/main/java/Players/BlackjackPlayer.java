@@ -1,9 +1,9 @@
-package Players;
+package main.java.Players;
 
 import java.io.Serializable;
 
 /**
- * Class that represents a general Blackjack player. Including the Dealer. The
+ * Class that represents a general main.java.main.java.balckjack.Blackjack player. Including the Dealer. The
  * dealer though plays to certain rules, and because of this, will need to
  * override some methods in the Dealer class.
  *
@@ -13,17 +13,17 @@ public class BlackjackPlayer implements Serializable {
 	private static final long serialVersionUID = 1L;  // Added serialVersionUID
 
 	/**
-	 * Name of Blackjack player.
+	 * Name of main.java.main.java.balckjack.Blackjack player.
 	 */
 	private String name;
 
 	/**
-	 * Age of Blackjack player.
+	 * Age of main.java.main.java.balckjack.Blackjack player.
 	 */
 	private int age;
 
 	/**
-	 * Gender of Blackjack player.
+	 * Gender of main.java.main.java.balckjack.Blackjack player.
 	 */
 	private String gender;
 

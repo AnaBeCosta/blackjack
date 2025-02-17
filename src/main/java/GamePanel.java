@@ -1,6 +1,17 @@
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+package main.java;
+
+import Cards.PlayerCardHand;
+import main.java.Players.Dealer;
+import main.java.Players.PersonInfo;
+import main.java.Players.Player;
+
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
+import java.util.*;
 
 public class GamePanel extends JPanel implements ActionListener {
 	private static final String DOUBLE_LABEL = "Double";
@@ -10,7 +21,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	private ArrayList<Player> players;
 	private int currentPlayerIndex;
 
-	private GameTable table;
+	private main.java.GameTable table;
 
 	private ArrayList<String> dealerHistory;
 
@@ -29,11 +40,11 @@ public class GamePanel extends JPanel implements ActionListener {
 	private ArrayList<JButton> clearBetButtons;
 	private JButton resetButton;
 	private JButton historyButton;
-	private HistoryFrame historyFrame;
+	private main.java.HistoryFrame historyFrame;
 
 	private ArrayList<JLabel> currentBetLabels;
 	private ArrayList<JLabel> playerWalletLabels;
-	private JLabel cardsLeft = new JLabel("Cards left...");
+	private JLabel cardsLeft = new JLabel("main.java.Cards left...");
 	private JLabel dealerSays = new JLabel("Dealer says...");
 
 	public GamePanel() {
@@ -290,19 +301,29 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	private int getPlayerIndex(Object source) {
-		List<List<Object>> buttonGroups = Arrays.asList(
-				hitButtons, doubleButtons, standButtons, clearBetButtons, allInButtons,
-				add1ChipButtons, add5ChipButtons, add10ChipButtons, add25ChipButtons, add100ChipButtons,
-				reduce1BetButtons, reduce10BetButtons
-		);
+		ArrayList<Object> buttonGroups = new ArrayList<>();
+		buttonGroups.add(String.valueOf(hitButtons));
+		buttonGroups.add(String.valueOf(doubleButtons));
+		buttonGroups.add(String.valueOf(standButtons));
+		buttonGroups.add(String.valueOf(clearBetButtons));
+		buttonGroups.add(String.valueOf(allInButtons));
+		buttonGroups.add(String.valueOf(add1ChipButtons));
+		buttonGroups.add(String.valueOf(add5ChipButtons));
+		buttonGroups.add(String.valueOf(add10ChipButtons));
+		buttonGroups.add(String.valueOf(add25ChipButtons));
+		buttonGroups.add(String.valueOf(add100ChipButtons));
+		buttonGroups.add(String.valueOf(reduce1BetButtons));
+		buttonGroups.add(String.valueOf(reduce10BetButtons));
+
 
 		for (int i = 0; i < players.size(); i++) {
-			for (List<Object> buttonGroup : buttonGroups) {
-				if (buttonGroup.get(i) == source) {
+			for (Object buttonGroup : buttonGroups) { 
+				if (buttonGroup.getClass() == source) {
 					return i;
 				}
 			}
 		}
+
 		return -1;
 	}
 
@@ -470,7 +491,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	private void updateCardsLeft() {
-		cardsLeft.setText("Deck: " + dealer.cardsLeftInPack() + "/" + (dealer.CARD_PACKS * Cards.CardPack.CARDS_IN_PACK));
+		cardsLeft.setText("Deck: " + dealer.cardsLeftInPack() + "/" + (dealer.CARD_PACKS * main.java.Cards.CardPack.CARDS_IN_PACK));
 		cardsLeft.setForeground(Color.WHITE);
 	}
 

@@ -1,4 +1,4 @@
-package Cards;
+package main.java.Cards;
 
 /**
  * Class to represent a playing Card.

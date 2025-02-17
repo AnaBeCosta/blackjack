@@ -1,12 +1,7 @@
-import javax.swing.JMenuItem;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JColorChooser;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
+package main.java;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
@@ -38,7 +33,7 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 	final int HEIGHT = 500;
 
 	public AppWindow() {
-		super("Blackjack");
+		super("main.java.main.java.balckjack.Blackjack");
 
 		configureWindow();
 		setupMenus();
@@ -85,7 +80,7 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 		menuBar.add(actionMenu);
 
 		JMenu betMenu = new JMenu("Bet");
-		oneChip = new JMenuItem("Add 1 Chip");
+		oneChip = new JMenuItem("Add 1 main.java.Chip");
 		fiveChip = new JMenuItem("Add 5 Chips");
 		tenChip = new JMenuItem("Add 10 Chips");
 		twentyFiveChip = new JMenuItem("Add 25 Chips");
@@ -103,7 +98,7 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 		menuBar.add(windowMenu);
 
 		JMenu helpMenu = new JMenu("Help");
-		helpBlackjackRulesMenu = new JMenuItem("Blackjack Rules");
+		helpBlackjackRulesMenu = new JMenuItem("main.java.main.java.balckjack.Blackjack Rules");
 		helpAboutMenu = new JMenuItem("About");
 		helpMenu.add(helpBlackjackRulesMenu);
 		helpMenu.add(helpAboutMenu);
@@ -211,6 +206,9 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 		}
 	}
 
+	private void showAboutInfo() {
+	}
+
 	private void updatePlayerDetailsAction() {
 		String[] playerOptions = { "Player 1", "Player 2" };
 		int playerIndex = JOptionPane.showOptionDialog(this, "Select the player to update", "Update Player",
@@ -233,7 +231,7 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 
 	private void updatePlayerNameColor() {
 		Color textColor = getContrastingColor(defaultTableColour);
-		gamePanel.updatePlayerNameColor(textColor); // Assuming GamePanel has a method to update player name color
+		gamePanel.updatePlayerNameColor(textColor); // Assuming main.java.GamePanel has a method to update player name color
 	}
 
 	private Color getContrastingColor(Color color) {
@@ -249,6 +247,26 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 
 	private void showBlackjackRules() {
 		JOptionPane.showMessageDialog(this,
-				"Blackjack Rules: \n1. The goal is to beat the dealer's hand without going over 21.\n2. Face cards");
+				"main.java.main.java.balckjack.Blackjack Rules: \n1. The goal is to beat the dealer's hand without going over 21.\n2. Face cards");
+	}
+
+	@Override
+	public void componentResized(ComponentEvent e) {
+
+	}
+
+	@Override
+	public void componentMoved(ComponentEvent e) {
+
+	}
+
+	@Override
+	public void componentShown(ComponentEvent e) {
+
+	}
+
+	@Override
+	public void componentHidden(ComponentEvent e) {
+
 	}
 }

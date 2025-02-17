@@ -1,4 +1,6 @@
-package Cards;
+package main.java.Cards;
+
+import java.util.Vector;
 
 /**
  * Class that represents a single hand of cards for a player.
@@ -45,10 +47,10 @@ public abstract class CardHand extends Vector<Card> {
 	}
 
 	/**
-	 * Check to see if hand has Blackjack - that being equal to 21 and only two
+	 * Check to see if hand has main.java.main.java.balckjack.Blackjack - that being equal to 21 and only two
 	 * cards.
 	 * 
-	 * @return Returns true if the player has Blackjack.
+	 * @return Returns true if the player has main.java.main.java.balckjack.Blackjack.
 	 */
 	public boolean hasBlackjack() {
 		return getTotal() == 21 && this.size() == 2;

@@ -1,4 +1,6 @@
- public class Chip {
+package main.java;
+
+public class Chip {
     private final int value;
 
     private Chip(int value) {

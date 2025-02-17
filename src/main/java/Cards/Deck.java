@@ -1,11 +1,15 @@
-package Cards;
+package main.java.Cards;
+
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.Stack;
 
 /**
- * Represents a shuffled Deck of playing Cards.
+ * Represents a shuffled Deck of playing main.java.Cards.
  *
  * @author David Winter
  */
-public class Deck extends Stack<Card> implements Serializable{
+public class Deck extends Stack<Card> implements Serializable {
 	private final int serialVersionUID = 1;
 	/**
 	 * The number of Card Packs used for this Deck.

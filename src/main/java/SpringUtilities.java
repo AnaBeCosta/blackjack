@@ -1,7 +1,8 @@
-// not too sure why this isn't a part of a Static Java library instead of just an extra .java file download
+package main.java;// not too sure why this isn't a part of a Static Java library instead of just an extra .java file download
 // from: http://java.sun.com/docs/books/tutorial/uiswing/layout/spring.html
 
-import javax.swing.SpringLayout;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * A 1.4 file that provides utility methods for creating form- or grid-style
