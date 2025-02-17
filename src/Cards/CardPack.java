@@ -21,9 +21,10 @@ public class CardPack extends Stack<Card> {
 		final String[] suits = { "Hearts", "Diamonds", "Clubs", "Spades" };
 
 		int cardCode = 1;
+		int numberCycles = 14;
 
 		for (String suit : suits) {
-			for (int i = 1; i < 14; i++) {
+			for (int i = 1; i < numberCycles; i++) {
 				addCard(new Card(new Face(i), new Suit(suit), cardCode));
 				cardCode++;
 			}
