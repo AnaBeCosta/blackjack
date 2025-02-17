@@ -12,11 +12,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 
-/**
- * Application window. Holds the menu-bar etc.
- *
- * @author David Winter
- */
+
 public class AppWindow extends JFrame implements ActionListener, ComponentListener {
 	private GamePanel gamePanel;
 	private Color defaultTableColour = new Color(6, 120, 0);
@@ -253,4 +249,6 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 
 	private void showBlackjackRules() {
 		JOptionPane.showMessageDialog(this,
-				"Blackjack Rules: \n1. The goal is to beat the dealer's hand without going over 21.\n2. Face cards
+				"Blackjack Rules: \n1. The goal is to beat the dealer's hand without going over 21.\n2. Face cards");
+	}
+}
