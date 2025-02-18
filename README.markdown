@@ -1,51 +1,74 @@
-main.java.main.java.balckjack.Blackjack
-=========
+# Blackjack - Projeto em Java
 
-Licence: [BSD](http://creativecommons.org/licenses/BSD/)
+Bem-vindo ao projeto **Blackjack**! Este é um jogo simples de Blackjack desenvolvido em **Java 17**. O objetivo desse repositório é fornecer uma implementação funcional para que você possa rodar o projeto localmente.
 
-A Java main.java.main.java.balckjack.Blackjack game written by [David Winter](http://davidwinter.me.uk) for a University project.
+## Requisitos
 
-For build instructions, consult the `BUILDING` file.
+- **Java 17** ou superior
+- **IntelliJ IDEA** (recomendado) ou qualquer outra IDE compatível com Java
+- **Maven** para gerenciamento de dependências e build do projeto
 
-=========================================================
+## Como rodar o projeto
 
-Alterações realizadas - Disciplina intensiva (Antes da ana e do Davi).
+Siga os passos abaixo para rodar o projeto localmente:
 
+### 1. Clone o repositório
 
-=========================================================
+Abra o terminal e execute o comando:
 
-Corrigido botão double conforme regras do jogo 
+```bash
+git clone https://github.com/seu_usuario/blackjack.git
+cd blackjack
+```
 
-Corrigido nome dos players 
+### 2. Abra o projeto no IntelliJ IDEA
 
-Adição da funcionalidade para visualizar o histórico das jogadas 
+- Abra o IntelliJ IDEA e escolha a opção **Open**.
+- Selecione a pasta do repositório clonado.
+- O IntelliJ detectará automaticamente que o projeto utiliza Maven e irá baixar as dependências.
 
-Adição dos botões para reduzir o valor da aposta de 1 em 1 e 10 em 10 
+### 3. Instale as dependências
 
-Adição do botão de "All In" 
+Caso precise instalar as dependências manualmente, rode o seguinte comando no terminal:
 
-Ajuste do pop-up apresentado quando algum(uns) jogador(es) zera(m) seu saldo 
+```bash
+mvn install
+```
 
-Ajuste da funcionalidade de limpar placar 
+### 4. Compile e rode o projeto
 
-Ajuste na mensagem de aviso sobre todos os jogadores precisarem escolher um valor de aposta 
+O arquivo principal do projeto é `Blackjack.java`, localizado em `src/main/java/Blackjack.java`.
 
-Ajuste na responsividade (alguns botões ficavam ocultos) 
+No IntelliJ IDEA, clique com o botão direito no arquivo `Blackjack.java` e escolha **Run 'Blackjack.main()'** para executar o jogo.
 
-Ajuste no botão "Deal"
+### 5. Visualize a análise no SonarCloud
 
-==========================================================
+A análise de qualidade do código está disponível no [SonarCloud](https://sonarcloud.io/project/overview?id=AnaBeCosta_blackjack).
 
+## Estrutura do Projeto
 
-Alterado cor dos textos para ser possível visualizar com qualquer cor de fundo
-Limpar dados na tela ao finalizar
-Campos da action bloqueados igualmente com as funções dos botões inferiores
-Impedir que o redimencionamento corte os valores
-Reposicionar botões para melhorar usabilidade
-Adicionar funcionalidades para configurar perfil do jogador(como implementado dois jogadores funciona para os dois)
-Modificar layout de apresentação de cartas
-Incluir resetar jogo
-Criado um segundo jogador para multiplayer
-Criado duas partes de interações de usuário que funcionam independente
-Colocado mensagens de fim de jogo
-Feito parte de jogabilidade do multiplayer ou seja um jogador continuar jogando caso o outro perca
+O código está estruturado da seguinte forma:
+
+```plaintext
+src/
+ └── main/
+     └── java/
+         └── Blackjack.java     # Arquivo principal do jogo
+         └── ...
+```
+
+## Contribuições
+
+Se você deseja contribuir para o projeto, siga os passos abaixo:
+
+1. Fork este repositório.
+2. Crie uma branch para a sua feature (`git checkout -b feature/feature-name`).
+3. Faça o commit das suas alterações (`git commit -am 'Add new feature'`).
+4. Faça push para a sua branch (`git push origin feature/feature-name`).
+5. Abra um pull request.
+
+## Dependências
+
+O projeto utiliza as seguintes dependências:
+
+- **JUnit** para testes (não implementados atualmente).
