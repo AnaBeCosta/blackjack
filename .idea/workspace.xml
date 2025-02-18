@@ -5,28 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="438f35cb-76a7-4ada-a764-8d817a30a497" name="Changes" comment="Sonar">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AppWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/CardHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/CardHand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/CardPack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/CardPack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/DealerCardHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/DealerCardHand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/Face.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/PlayerCardHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/PlayerCardHand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cards/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cards/Suit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PlayerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayerDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/BlackjackPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/BlackjackPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/PersonInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/PersonInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/AppWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/Chip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/GameTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HistoryFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/HistoryFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlayerDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/PlayerDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SimpleFileFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/SimpleFileFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack/SpringUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Blackjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/18.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/19.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/21.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/22.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/23.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/23.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/24.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/24.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/25.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/25.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/26.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/26.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/27.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/27.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/28.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/29.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/30.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/31.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/31.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/33.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/33.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/34.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/35.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/35.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/36.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/36.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/37.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/37.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/38.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/38.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/39.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/39.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/40.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/41.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/41.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/42.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/43.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/43.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/44.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/44.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/45.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/45.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/46.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/46.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/47.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/47.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/49.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/49.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/50.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/51.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/51.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/52.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/card_images/red_back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/card_images/red_back.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +123,9 @@
     "Maven.blackjack [compile].executor": "Run",
     "Maven.blackjack [deploy].executor": "Run",
     "Maven.blackjack [install].executor": "Run",
+    "Maven.blackjack [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "Maven.blackjack [org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile].executor": "Run",
+    "Maven.blackjack [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
     "Maven.blackjack [org.apache.maven.plugins:maven-jar-plugin:3.2.0:jar].executor": "Run",
     "Maven.blackjack [package].executor": "Run",
     "Maven.blackjack [validate].executor": "Run",
@@ -109,11 +153,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Blackjack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="blackjack.Blackjack" />
+      <option name="MAIN_CLASS_NAME" value="Blackjack" />
       <module name="blackjack" />
       <extension name="coverage">
         <pattern>
@@ -164,6 +213,7 @@
       <workItem from="1739800781763" duration="4953000" />
       <workItem from="1739805789587" duration="2051000" />
       <workItem from="1739814150798" duration="8974000" />
+      <workItem from="1739883323914" duration="3988000" />
     </task>
     <task id="LOCAL-00001" summary="Sonar">
       <option name="closed" value="true" />

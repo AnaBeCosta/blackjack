@@ -1,15 +1,10 @@
-package main.java;
+package Blackjack;
 
 import Cards.PlayerCardHand;
 import Cards.CardPack;
 import Players.Dealer;
 import Players.PersonInfo;
 import Players.Player;
-
-import main.java.GameTable;
-import main.java.HistoryFrame;
-import main.java.SimpleFileFilter;
-import main.java.PlayerDialog;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,7 +21,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	private ArrayList<Player> players;
 	private int currentPlayerIndex;
 
-	private GameTable table;
+	private GameTable table = new GameTable();
 
 	private ArrayList<String> dealerHistory;
 
@@ -54,8 +49,6 @@ public class GamePanel extends JPanel implements ActionListener {
 
 	public GamePanel() {
 		super();
-
-		table = new GameTable();
 
 		initLayout();
 
@@ -308,31 +301,33 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	private int getPlayerIndex(Object source) {
-		ArrayList<Object> buttonGroups = new ArrayList<>();
-		buttonGroups.add(String.valueOf(hitButtons));
-		buttonGroups.add(String.valueOf(doubleButtons));
-		buttonGroups.add(String.valueOf(standButtons));
-		buttonGroups.add(String.valueOf(clearBetButtons));
-		buttonGroups.add(String.valueOf(allInButtons));
-		buttonGroups.add(String.valueOf(add1ChipButtons));
-		buttonGroups.add(String.valueOf(add5ChipButtons));
-		buttonGroups.add(String.valueOf(add10ChipButtons));
-		buttonGroups.add(String.valueOf(add25ChipButtons));
-		buttonGroups.add(String.valueOf(add100ChipButtons));
-		buttonGroups.add(String.valueOf(reduce1BetButtons));
-		buttonGroups.add(String.valueOf(reduce10BetButtons));
-
+		ArrayList<ArrayList<JButton>> buttonGroups = new ArrayList<>();
+		buttonGroups.add(hitButtons);
+		buttonGroups.add(doubleButtons);
+		buttonGroups.add(standButtons);
+		buttonGroups.add(clearBetButtons);
+		buttonGroups.add(allInButtons);
+		buttonGroups.add(add1ChipButtons);
+		buttonGroups.add(add5ChipButtons);
+		buttonGroups.add(add10ChipButtons);
+		buttonGroups.add(add25ChipButtons);
+		buttonGroups.add(add100ChipButtons);
+		buttonGroups.add(reduce1BetButtons);
+		buttonGroups.add(reduce10BetButtons);
 
 		for (int i = 0; i < players.size(); i++) {
-			for (Object buttonGroup : buttonGroups) { 
-				if (buttonGroup.getClass() == source) {
-					return i;
+			for (ArrayList<JButton> buttonGroup : buttonGroups) {
+				for (Object button : buttonGroup) {
+					if (button == source) { // Correta verificação de referência
+						return i;
+					}
 				}
 			}
 		}
 
 		return -1;
 	}
+
 
 	public boolean isBetEvent(String act) {
 		Set<String> validBets = new HashSet<>();

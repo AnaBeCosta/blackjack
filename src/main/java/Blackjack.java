@@ -1,6 +1,4 @@
-package blackjack;
-
-import main.java.AppWindow;
+import Blackjack.AppWindow;
 
 import javax.swing.*;
 

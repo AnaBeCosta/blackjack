@@ -1,4 +1,4 @@
-package main.java;
+package Blackjack;
 
 import javax.swing.*;
 import java.awt.*;

@@ -47,7 +47,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>blackjack.Blackjack</mainClass>
+                            <mainClass>Blackjack</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

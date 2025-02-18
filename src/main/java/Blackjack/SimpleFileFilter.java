@@ -1,4 +1,4 @@
-package main.java;
+package Blackjack;
 
 import javax.swing.filechooser.FileFilter;
 import java.io.File;

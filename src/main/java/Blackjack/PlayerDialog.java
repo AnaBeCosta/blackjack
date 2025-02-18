@@ -1,11 +1,10 @@
-package main.java;
+package Blackjack;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import main.java.SpringUtilities;
 import Players.Player;
 
 public class PlayerDialog extends JDialog implements ActionListener {

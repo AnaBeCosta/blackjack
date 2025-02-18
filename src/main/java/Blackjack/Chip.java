@@ -1,4 +1,4 @@
-package main.java;
+package Blackjack;
 
 public class Chip {
     private final int value;

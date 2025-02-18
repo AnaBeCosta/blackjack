@@ -1,4 +1,4 @@
-package main.java;
+package Blackjack;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,9 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
-
-import main.java.GamePanel;
-import main.java.Chip;
 
 
 public class AppWindow extends JFrame implements ActionListener, ComponentListener {
@@ -83,7 +80,7 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 		menuBar.add(actionMenu);
 
 		JMenu betMenu = new JMenu("Bet");
-		oneChip = new JMenuItem("Add 1 main.java.Chip");
+		oneChip = new JMenuItem("Add 1 main.Blackjack.Chip");
 		fiveChip = new JMenuItem("Add 5 Chips");
 		tenChip = new JMenuItem("Add 10 Chips");
 		twentyFiveChip = new JMenuItem("Add 25 Chips");
@@ -234,7 +231,7 @@ public class AppWindow extends JFrame implements ActionListener, ComponentListen
 
 	private void updatePlayerNameColor() {
 		Color textColor = getContrastingColor(defaultTableColour);
-		gamePanel.updatePlayerNameColor(textColor); // Assuming main.java.GamePanel has a method to update player name color
+		gamePanel.updatePlayerNameColor(textColor); // Assuming main.Blackjack.GamePanel has a method to update player name color
 	}
 
 	private Color getContrastingColor(Color color) {
