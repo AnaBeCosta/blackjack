@@ -9,5 +9,8 @@
         <module name="blackjack" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-archiver" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

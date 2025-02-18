@@ -1,7 +1,8 @@
-package main.java.Cards;
+package Cards;
 
 
 import java.util.Stack;
+import Cards.Face;
 
 /**
  * Represents a pack of 52 playing main.java.Cards. Hearts, Diamonds, Clubs and Spades;

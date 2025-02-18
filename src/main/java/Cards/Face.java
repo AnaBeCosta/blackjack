@@ -1,4 +1,4 @@
-package main.java.Cards;
+package Cards;
 
 /**
  * Class to represent the face value of a Card.

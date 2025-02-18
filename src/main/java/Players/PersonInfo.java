@@ -1,4 +1,4 @@
-package main.java.Players;
+package Players;
 
 public class PersonInfo {
     private String name;

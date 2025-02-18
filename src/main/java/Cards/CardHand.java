@@ -1,4 +1,4 @@
-package main.java.Cards;
+package Cards;
 
 import java.util.Vector;
 

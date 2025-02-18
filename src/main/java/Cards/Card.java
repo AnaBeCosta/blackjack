@@ -1,4 +1,7 @@
-package main.java.Cards;
+package Cards;
+
+import Cards.Suit;
+import Cards.Face;
 
 /**
  * Class to represent a playing Card.

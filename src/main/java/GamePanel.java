@@ -1,13 +1,18 @@
 package main.java;
 
 import Cards.PlayerCardHand;
-import main.java.Players.Dealer;
-import main.java.Players.PersonInfo;
-import main.java.Players.Player;
+import Cards.CardPack;
+import Players.Dealer;
+import Players.PersonInfo;
+import Players.Player;
+
+import main.java.GameTable;
+import main.java.HistoryFrame;
+import main.java.SimpleFileFilter;
+import main.java.PlayerDialog;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
@@ -21,7 +26,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	private ArrayList<Player> players;
 	private int currentPlayerIndex;
 
-	private main.java.GameTable table;
+	private GameTable table;
 
 	private ArrayList<String> dealerHistory;
 
@@ -40,7 +45,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	private ArrayList<JButton> clearBetButtons;
 	private JButton resetButton;
 	private JButton historyButton;
-	private main.java.HistoryFrame historyFrame;
+	private HistoryFrame historyFrame;
 
 	private ArrayList<JLabel> currentBetLabels;
 	private ArrayList<JLabel> playerWalletLabels;
@@ -49,6 +54,8 @@ public class GamePanel extends JPanel implements ActionListener {
 
 	public GamePanel() {
 		super();
+
+		table = new GameTable();
 
 		initLayout();
 
@@ -491,7 +498,7 @@ public class GamePanel extends JPanel implements ActionListener {
 	}
 
 	private void updateCardsLeft() {
-		cardsLeft.setText("Deck: " + dealer.cardsLeftInPack() + "/" + (dealer.CARD_PACKS * main.java.Cards.CardPack.CARDS_IN_PACK));
+		cardsLeft.setText("Deck: " + dealer.cardsLeftInPack() + "/" + (dealer.CARD_PACKS * CardPack.CARDS_IN_PACK));
 		cardsLeft.setForeground(Color.WHITE);
 	}
 

@@ -1,4 +1,4 @@
-package main.java.Players;
+package Players;
 
 import java.io.Serializable;
 

@@ -1,9 +1,12 @@
-package main.java.Players;
+package Players;
 
-import main.java.Cards.Card;
-import main.java.Cards.DealerCardHand;
-import main.java.Cards.Deck;
-import main.java.Cards.PlayerCardHand;
+import Cards.Card;
+import Cards.DealerCardHand;
+import Cards.Deck;
+import Cards.PlayerCardHand;
+import Players.PersonInfo;
+import Players.Player;
+import Players.BlackjackPlayer;
 
 import java.util.ArrayList;
 
@@ -13,7 +16,7 @@ import java.util.ArrayList;
  *
  * @author David Winter
  */
-public class Dealer extends main.java.Players.BlackjackPlayer {
+public class Dealer extends BlackjackPlayer {
 	/**
 	 * The Deck of cards used for the game. The Dealer is in complete control of the
 	 * Deck.
@@ -125,7 +128,7 @@ public class Dealer extends main.java.Players.BlackjackPlayer {
 	 *
 	 * @return True if cards were dealt, otherwise false.
 	 */
-	public void deal(ArrayList<main.java.Players.Player> players) {
+	public void deal(ArrayList<Player> players) {
 		gameOver = false;
 		cardsFaceUp = false;
 

@@ -1,4 +1,6 @@
-package main.java.Cards;
+package Cards;
+
+import Cards.CardHand;
 
 /**
  * Class that represents a single hand of cards for a player.

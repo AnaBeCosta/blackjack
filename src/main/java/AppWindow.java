@@ -7,6 +7,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 
+import main.java.GamePanel;
+import main.java.Chip;
+
 
 public class AppWindow extends JFrame implements ActionListener, ComponentListener {
 	private GamePanel gamePanel;
